@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:hint="User Name->"/>
+
+
+
+    <EditText
+        android:hint="Password->"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:id="@+id/addUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:onClick="addUser"
+        android:text="Add user" />
+
+    <Button
+        android:id="@+id/viewDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:onClick="view_detail"
+        android:text="View detail" />
+
+    <EditText
+        android:id="@+id/singleUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter any user name"
+        android:layout_marginBottom="30dp" />
+    <Button
+        android:id="@+id/singleUserViewDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:onClick="singleuserview_detail"
+        android:text="Particular user detail" />
+    <EditText
+        android:id="@+id/up_dlt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter name for update and dlt"
+        android:layout_marginBottom="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/upDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:onClick="upDate"
+        android:text="Update" />
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:onClick="Delete"
+            android:text="Delete" />
+    </LinearLayout>
+</LinearLayout>
